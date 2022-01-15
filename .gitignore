@@ -1,0 +1,8 @@
+# IDE Files
+.idea/
+
+# Dependencies
+node_modules/
+
+# Build artifacts
+code.js
