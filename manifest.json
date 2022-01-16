@@ -3,8 +3,11 @@
   "id": "1064163820621900974",
   "api": "1.0.0",
   "main": "dist/code.js",
+  "ui": "dist/ui.html",
   "editorType": [
     "figma"
   ],
-  "ui": "dist/ui.html"
+  "relaunchButtons": [
+    {"command": "edit", "name": "Edit copy"}
+  ]
 }

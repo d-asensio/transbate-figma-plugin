@@ -28,7 +28,10 @@ function getSelectedTextNode() {
 
 function handleUIMessage(msg) {
   if (msg.type === 'create-copy') {
-    console.log('Creating copy', msg.payload)
+    const editedNode = figma.getNodeById(msg.payload.nodeId)
+    editedNode.setRelaunchData({
+      edit: ''
+    })
   }
 
   figma.closePlugin();
