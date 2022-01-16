@@ -1,9 +1,4 @@
-interface NodeIntlMetadata {
-  nodeId: string
-  tag: string
-  languages: Record<string, string>
-}
-
+import {NodeIntlMetadata} from "./interfaces/NodeIntlMetadata";
 
 init()
 
@@ -40,7 +35,6 @@ function handleUIMessage(msg) {
     editedNode.setRelaunchData({
       edit: ''
     })
-
   }
 
   figma.closePlugin();
