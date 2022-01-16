@@ -26,8 +26,9 @@ function handleSaveClick() {
 function handleMessage({data}) {
   const {type, payload} = data.pluginMessage
   if (type === 'text-selected') {
-    englishInputEl.value = payload.characters
-    state.nodeId = payload.id
+    englishInputEl.value = payload.languages.en
+    tagInputEl.value = payload.tag
+    state.nodeId = payload.nodeId
   }
 }
 
